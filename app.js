@@ -33,5 +33,22 @@ function addTodo(event) {
     todoList.appendChild(todoDiv);
     //Clear todo input value
     todoInput.value = "";
+}
 
+// Creating the delete and check function
+
+function deleteCheck(e) {
+    // console.log(e.target);
+    const item = e.target;
+    //Delet the to do item
+    if (item.classList[0] === 'trash-btn') {
+        const todo = item.parentElement;
+        todo.remove();
+    }
+
+    //check mark to complete
+    if (item.classList[0] === 'complete-btn') {
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+    }
 }
