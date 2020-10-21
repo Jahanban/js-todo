@@ -120,7 +120,7 @@ form button:hover {
     opacity: 0;
 }
 
-/* Styling the filer - select */
+/* Styling the filter - select */
 
 select {
     -webkit-appearence: none;
@@ -129,4 +129,34 @@ select {
     outline: none;
     box-shadow: none;
     border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #FF6F47;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    /* add that little down arrow */
+    content: "\25BC" ;
+    position: absolute;
+    background-color: #FF6F47;
+    top: 0; 
+    right: 0; 
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #FF6F47;
 }
