@@ -119,3 +119,14 @@ form button:hover {
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
+
+/* Styling the filer - select */
+
+select {
+    -webkit-appearence: none;
+    -moz-appearence: none;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
