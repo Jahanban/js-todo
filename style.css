@@ -54,3 +54,11 @@ form button:hover {
     background: #d88771;
     color: white;
 }
+
+/* //styling to the to do buttons */
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
