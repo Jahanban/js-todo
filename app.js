@@ -9,13 +9,13 @@ todoButton.addEventListener('click', addTodo);
 //Functions
 function addTodo(event) {
     event.preventDefault();//to prevent page from refreshing when plus button is clicked
-    console.log('hello');
+    // console.log('hello');
     // Creating Todo div
     const todoDiv = document.createElement('div'); // creating the div
     todoDiv.classList.add('todo'); // adding class to the div
     // Create the LI
     const newTodo = document.createElement('li'); //creating li
-    newTodo.innerText = 'hey';
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
     // Check button

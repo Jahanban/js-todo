@@ -27,6 +27,10 @@ header {
     font-size: 1.5rem;
 }
 
+h1 {
+    font-weight: 400;
+}
+
 header,
 form {
     min-height: 20vh;
@@ -90,4 +94,8 @@ form button:hover {
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
+}
+
+.complete-btn {
+    background: rgb(72, 150, 72);
 }
